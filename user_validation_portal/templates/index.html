@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>User Validation Portal</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>User Validation Portal</h1>
+
+    <form action="/login" method="POST">
+
+        <label>User Email ID</label>
+
+        <input type="text"
+               name="userid"
+               placeholder="Enter Email ID">
+
+        <label>Password</label>
+
+        <input type="password"
+               name="password"
+               placeholder="Enter Password">
+
+        <label>Date of Birth</label>
+
+        <input type="date"
+               name="dob">
+
+        <button type="submit">Login</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

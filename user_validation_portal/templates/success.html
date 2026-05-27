@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Success</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Login Successful</h1>
+
+    <h2>User Details</h2>
+
+    <p><strong>User ID:</strong> {{ userid }}</p>
+
+    <p><strong>Date of Birth:</strong> {{ dob }}</p>
+
+    <p><strong>Calculated Age:</strong> {{ age }}</p>
+
+</div>
+
+</body>
+</html>
